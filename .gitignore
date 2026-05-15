@@ -1,0 +1,47 @@
+# Local experiment artifacts
+logs/
+output/
+
+# Local data files. Keep loaders and preprocessing scripts tracked.
+data/files/
+data/*/images/
+data/*/BraTS*/
+data/*/raw*/
+data/*/processed*/
+data/*/*.csv
+data/*/*.jpg
+data/*/*.jpeg
+data/*/*.nii
+data/*/*.nii.gz
+data/*/*.npz
+data/*/*.png
+
+# Model checkpoints
+*.ckpt
+*.pt
+*.pth
+
+# Root-level local launchers and cluster logs
+/run_array*.sh
+/run_simulation.sh
+/slurm*.sh
+/run*.s
+/*.slurm
+/*.out
+/*.err
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+
+# OS and editor state
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Private local agent state
+.claude/
